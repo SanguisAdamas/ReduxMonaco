@@ -2465,7 +2465,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = "--[[Redux SS on top chat! \n Made By SanguisAdamas and Cendicate\n]]";    
+    const defaultText = "--[[lorem ipsum dolor sit amet]]";    
     if (!content) {
         content = defaultText;
     }
@@ -2528,7 +2528,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[Redux SS on top chat! \n Made By SanguisAdamas and Cendicate\n]]" : tab.content;        editor.setValue(contentToSet);
+        const contentToSet = tab.content.trim() === '' ? "--[[lorem ipsum dolor sit amet]]" : tab.content;        editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
     }
